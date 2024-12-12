@@ -21,5 +21,5 @@ def filter_data():
     filtered_data = data[data['Designation'] == selected_designation]
     return render_template('table.html', tables=filtered_data.to_html(classes='table', index=False))
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
